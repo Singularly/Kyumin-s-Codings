@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>9-3</title>
+</head>
+<body>
+    <script>
+        var count = 0, tot=1, aver, score1, score2, score3;
+        
+        while(tot != 0)
+        {
+            if(tot != 0)
+            {
+            score1 = parseInt(prompt("과목1의 성적을 입력하세요."));
+            score2 = parseInt(prompt("과목2의 성적을 입력하세요."));
+            score3 = parseInt(prompt("과목3의 성적을 입력하세요."));
+            
+            tot = score1 + score2 + score3;
+            aver = tot/3;
+
+            count = count + 1;
+            
+            document.write(count + "번째 학생: 총점 " + tot + "점, 평균 " + aver +"점 <BR>" ); 
+            }
+                
+            
+            
+        }
+        
+        document.write("총 " + count + "명을 성적 처리하였습니다.");
+    </script>
+</body>
+</html>
