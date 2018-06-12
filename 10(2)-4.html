@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>10(2)-4</title>
+</head>
+<body>
+    <script>
+        var num, i, j, dist;
+
+        num = parseInt(prompt("숫자를 입력하세요."));
+        
+        document.write("사용자 입력: " + num + "<BR>");
+
+        for(i = 2; i <= num; i++)
+        {
+            dist = 0;
+
+            for(j = 2; j <= i - 1; j++)
+            {
+                if(i %j == 0)
+                {
+                    dist = 1;
+                }
+            }
+
+            if(dist == 0)
+            {
+                document.write(i + " ");
+            }
+        }
+    </script>
+</body>
+</html>

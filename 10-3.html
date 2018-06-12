@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>10-3</title>
+</head>
+<body>
+    <script>
+        var i, num, m, n;
+
+        for(i = 1; i <= 5; i = i + 1)
+        {
+            num = parseInt(prompt("숫자를 입력하세요."));
+            document.write("숫자" + i +": " + num + "<BR>");
+
+            if(i == 1)
+            {
+                m = n = num;
+                
+            }
+
+            else if(num >= m)
+            {
+                m = num;
+            }
+
+            else if(num <= n)
+            {
+                n = num;
+            }
+        }
+        
+        document.write("입력한 수 중 가장 큰 수는 " + m + "이고 가장 작은수는 " + n + "입니다.");
+    </script>
+</body>
+</html>
