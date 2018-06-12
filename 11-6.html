@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>11-6</title>
+</head>
+<body>
+    <script>
+        var num = [132, 22, 189, 72, 778, 91, 125, 142, 173, 94];
+        var i, j, temp;
+        document.write("정렬 전 : ")
+        
+        for(i = 0; i < num.length; i++)
+        {
+            document.write(num[i] + " ");
+        }
+
+        for(i = 0; i < num.length; i++)
+        {
+            for(j = i + 1; j < num.length; j++)
+            {
+                if(num[i] > num[j])
+                {
+                    temp = num[i];
+                    num[i] = num[j];
+                    num[j] = temp;
+                }
+            }
+        }
+        document.write("<BR>정렬 후 : ")
+        for(i = 0; i < num.length; i++)
+        {
+            document.write(num[i] + " ");
+        }
+    </script>
+</body>
+</html>

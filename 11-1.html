@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>11-1</title>
+</head>
+<body>
+    <script>
+        var num = new Array();
+        
+        var i, hap = 0, aver;
+
+        for(i = 0; i <= 6; i ++)
+        {
+            num[i] = parseInt(prompt("숫자를 입력하세요"));
+            hap = hap + num[i];
+        }
+
+        aver = hap/num.length;
+
+        document.write("총점 : " + hap + "<BR>" + "평균 : " + aver);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>11-7</title>
+</head>
+<body>
+    <script>
+        var letr = ["kim", "park", "oh", "lim", "pang", "seo", "lee", "yang", "bae", "back"];
+        var i, j, temp;
+        
+        document.write("정렬 전 : ")
+        for(i = 0; i < letr.length; i++)
+        {
+            document.write(letr[i] + " ");
+        }
+
+        for(i = 0; i < letr.length; i++)
+        {
+            for(j = i + 1; j <letr.length; j++)
+            {
+                if(letr[i] > letr[j])
+                {
+                    temp = letr[j]
+                    letr[j] = letr[i];
+                    letr[i] = temp;
+                }
+            }
+        }
+
+        document.write("<BR> 정렬 후: ")
+        for(i = 0; i < letr.length; i++)
+        {
+            document.write(letr[i] + " ");
+        }
+    </script>
+</body>
+</html>

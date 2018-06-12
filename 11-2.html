@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>11-2</title>
+</head>
+<body>
+    <script>
+        var num = [234, 89, 678, 55, 785, 66];
+        var i, j, m, n;
+
+        for(i = 0; i < num.length; i++)
+        {
+            for(j = i + 1; j < num.length; j++)
+            {
+                if(num[i] <= num[j])
+                {
+                    m = num[j];
+                    for(i = 0; i < j; i++)
+                    {
+                        if(m <= num[i])
+                        {
+                            m = num[i];
+                        }
+                    }
+                }
+                else
+                {
+                    n = num[i];
+                    for(i = 0; i < j; i++)
+                    {
+                        if(n >= num[i])
+                        {
+                            n = num[i];
+                        }
+                    }
+                }
+            }
+        }
+
+        document.write("가장 큰 값 : " + m + "<BR>" + "가장 작은 값 : " + n);
+    </script>
+</body>
+</html>

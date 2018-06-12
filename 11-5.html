@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>11-5</title>
+</head>
+<body>
+    <script>
+        var num = [33, 2, 189, 72, 7, 91, 5, 14, 17, 9];
+        var i, j, temp;
+        temp = num[0];
+                        
+        document.write("초기 배열 값 : ");
+        for(i = 0; i < num.length; i++)
+        {
+            document.write(num[i] + " ");   
+            num[i - 1] = num[i];
+        }
+                
+        num[(num.length - 1)] = temp;
+                        
+        document.write("<BR>이동 후 배열 값 : ")
+        for(i = 0; i < num.length; i++)
+        {
+            document.write(num[i] + " ");
+        }
+    </script>
+</body>
+</html>
